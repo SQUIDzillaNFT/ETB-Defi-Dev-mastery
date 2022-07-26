@@ -5,7 +5,7 @@ import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
 contract Weth is ERC20 {
     constructor () ERC20 ('wrapped ether', 'weth') {
 
-        funciton deposit() external payable {
+        function deposit() external payable {
             _mint(msg.sender, msg.value);
         }
 
